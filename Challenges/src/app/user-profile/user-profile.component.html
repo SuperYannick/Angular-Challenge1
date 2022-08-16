@@ -1,0 +1,13 @@
+<div>
+  <img [src]="User.photo" />
+  <div>
+    <p>quote : {{ User.quote }}</p>
+    <div><input [(ngModel)]="User.quote" /></div>
+  </div>
+  <!-- event binding au click du bouton au click passe de User.hide a not hide qui est defini comme false dans le TS-->
+  <button (click)="User.hide = !User.hide">Show/Hide Age</button>
+  <!-- property binding: hidden property qui prend la valeur donnée par le TS -->
+  <span [hidden]="User.hide"> age : {{ User.age }} </span>
+
+  name : {{ User.name }} <br />firstname : {{ User.firstName }}
+</div>

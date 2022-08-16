@@ -7,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ABCBlockComponent implements OnInit {
   blockTest = 'ABC';
+  nom = 'yannick';
+
+  imageSrc = '../../assets/Helicoptere.webp';
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  direBonjour() {
+    console.log('Bonjour');
+  }
 }
