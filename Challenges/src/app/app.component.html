@@ -1,25 +1,2 @@
-<!-- <app-abcblock class="bottomleft"></app-abcblock>
-<app-abcblock class="bottomright"></app-abcblock>
-<app-abcblock class="upright"></app-abcblock>
-<app-abcblock class="upleft"></app-abcblock> -->
-<app-user-profile></app-user-profile>
-<ul>
-  <li>pomme de terre</li>
-  <li>raclette</li>
-  <li>jambon</li>
-  <li [ngStyle]="{ backgroundColor: isThisIngredientVital ? 'red' : 'yellow' }">
-    cornichons
-  </li>
-  <li>chou fleur</li>
-</ul>
-<div [ngClass]="{ vital: isThisIngredientVital }">cornichons</div>
-
-<ul *ngIf="displayGuestList">
-  <li>Richard</li>
-  <li>Khouloud</li>
-  <li>Rozke</li>
-  <li>François</li>
-</ul>
-<ul *ngFor="let song of songList">
-  <li>{{ song }}</li>
-</ul>
+<app-menu></app-menu>
+<router-outlet></router-outlet>
