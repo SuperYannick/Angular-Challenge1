@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Yannick';
+
+  isThisIngredientVital: boolean = true;
+  displayGuestList: boolean = true;
+  songList: string[] = ['Superman', 'hello world', 'Faith'];
 }
